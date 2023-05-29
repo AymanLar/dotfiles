@@ -1,0 +1,57 @@
+font:
+  normal:
+    family: JetBrains Mono
+    style: Regular
+
+  bold:
+    family: JetBrains Mono
+    style: Bold
+
+  italic:
+    family: JetBrains Mono
+    style: Italic
+
+  bold_italic:
+    family: JetBrains Mono
+    style: Bold Italic
+
+  size: 11
+
+## Window settigns
+window:
+  padding:
+    x: 6
+    y: 6
+  dynamic_padding: false
+  title: Alacritty
+  class:
+    instance: Alacritty
+    general: Alacritty
+## Scrolling settings
+scrolling:
+  history: 5000
+window.opacity:  0.7
+key_bindings:
+    # (Windows, Linux, and BSD only)
+  - { key: V,         mods: Alt,           action: Paste                       }
+  - { key: C,         mods: Alt,           action: Copy                        }
+  - { key: Insert,    mods: Shift,         action: PasteSelection              }
+  - { key: Key0,      mods: Control,       action: ResetFontSize               }
+  - { key: Equals,    mods: Control,       action: IncreaseFontSize            }
+  - { key: Plus,      mods: Control,       action: IncreaseFontSize            }
+  - { key: Minus,     mods: Control,       action: DecreaseFontSize            }
+  - { key: F11,       mods: None,          action: ToggleFullscreen            }
+  - { key: L,         mods: Control,       action: ClearLogNotice              }
+  - { key: L,         mods: Control,       chars: "\x0c"                       }
+  - { key: Up,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
+  - { key: Up,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
+
+colors:
+     primary:
+       background: '#03001C'
+       foreground: '0xeaeaea'
+       cursor:
+         text: '0xffffff'
+         cursor: '0xeaeaea'
+
+

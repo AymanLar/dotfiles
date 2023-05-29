@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Display a critical notification
+dunstify -u critical "Critical Notification" "This is a critical notification."
+
+# Display a normal notification
+dunstify -u normal "Normal Notification" "This is a normal notification."
+
+# Display a low notification
+dunstify -u low "Low Notification" "This is a low notification."
+
