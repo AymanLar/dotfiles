@@ -48,7 +48,7 @@ key_bindings:
 
 colors:
      primary:
-       background: '#03001C'
+       background: '#000000'
        foreground: '0xeaeaea'
        cursor:
          text: '0xffffff'
