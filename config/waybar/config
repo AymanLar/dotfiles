@@ -34,11 +34,11 @@
         "all-outputs": true,
         "on-click": "activate",
         "format": "{icon}",
-        "format-icons": {
+      /*  "format-icons": {
             "urgent": "🟡",
             "active": "⚪️",
             "default": "⚫️"
-	    }
+	    }*/
     },
 
     "tray": {
