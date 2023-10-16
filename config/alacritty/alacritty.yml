@@ -45,13 +45,6 @@ key_bindings:
   - { key: L,         mods: Control,       chars: "\x0c"                       }
   - { key: Up,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
   - { key: Up,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
-
-colors:
-     primary:
-       background: '#000000'
-       foreground: '0xeaeaea'
-       cursor:
-         text: '0xffffff'
-         cursor: '0xeaeaea'
-
+import:
+ - ~/.config/alacritty/themes/gruvbox_dark.yaml
 
