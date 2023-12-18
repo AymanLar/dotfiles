@@ -184,7 +184,7 @@ bar {
 
 #include /home/ayman/.config/sway/*
 # custom binds
-bindsym $mod+s exec  slurp | grim -g - - | tee >(wl-copy) > "$(date + 'shots/screenshot_%Y-%m-%d-%H%M%S.png')"
+bindsym $mod+s exec slurp | grim -g - - | wl-copy && wl-paste > shots/$(date +'%Y-%m-%d-%H%M%S_shot.png')
 
 #
 # lenovo keybinds:
