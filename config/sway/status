@@ -1,9 +1,4 @@
-# !/bin/bash
-# The Sway configuration file in ~/.config/sway/config calls this script.
-# You should see changes to the status bar after saving this script.
-# If not, do "killall swaybar" and $mod+Shift+c to reload the configuration.
-# The abbreviated weekday (e.g., "Sat"), followed by the ISO-formatted date
-
+#!/bin/sh
 # like 2018-10-06 and the time (e.g., 14:01)
 date_formatted=$(date "+%a %F %H:%M")
 
@@ -16,4 +11,4 @@ volume=$(pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( $SINK + 1 )
 
 # Emojis and characters for the status bar
 # 💎 💻 💡 🔌 ⚡ 📁 \|
-echo $volume% 🔊  $battery_capacity% $battery_status 🔋 $date_formatted
+echo "$volume% 🔊 $battery_capacity% $battery_status 🔋 $date_formatted"
