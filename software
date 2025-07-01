@@ -43,6 +43,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 pulsemixer
+fswebcam
 python-pip
 slurp
 tmux
