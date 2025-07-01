@@ -1,9 +1,10 @@
 Installed software:
 
-- From the AUR
+- From the AUR/source
 hyprland-git
 waybar-hyprland-git
 yay
+fswebcam
 
 - From the main repo
 alacritty
@@ -43,7 +44,6 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 pulsemixer
-fswebcam
 python-pip
 slurp
 tmux
