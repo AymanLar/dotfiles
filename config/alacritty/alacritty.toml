@@ -1,98 +1,134 @@
-import = ["/home/ayman/.config/alacritty/themes/gruvbox_dark.toml"]
-#"window.opacity" = 0.7
+# Alacritty Configuration
+# Based on Gruvbox Dark theme
 
-[font]
-size = 11
+# Window configuration
+window:
+  opacity: 0.9
+  padding:
+    x: 10
+    y: 10
+  decorations: buttonless
+  startup_mode: Windowed
 
-[font.bold]
-family = "JetBrains Mono"
-style = "Bold"
+# Font configuration
+font:
+  normal:
+    family: "JetBrains Mono"
+    style: Regular
+  bold:
+    family: "JetBrains Mono"
+    style: Bold
+  italic:
+    family: "JetBrains Mono"
+    style: Italic
+  size: 12.0
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
 
-[font.bold_italic]
-family = "JetBrains Mono"
-style = "Bold Italic"
+# Colors (Gruvbox Dark)
+colors:
+  primary:
+    background: "0x282828"
+    foreground: "0xebdbb2"
+  cursor:
+    text: "0x282828"
+    cursor: "0xebdbb2"
+  normal:
+    black: "0x282828"
+    red: "0xcc241d"
+    green: "0x98971a"
+    yellow: "0xd79921"
+    blue: "0x458588"
+    magenta: "0xb16286"
+    cyan: "0x689d6a"
+    white: "0xa89984"
+  bright:
+    black: "0x928374"
+    red: "0xfb4934"
+    green: "0xb8bb26"
+    yellow: "0xfabd2f"
+    blue: "0x83a598"
+    magenta: "0xd3869b"
+    cyan: "0x8ec07c"
+    white: "0xebdbb2"
 
-[font.italic]
-family = "JetBrains Mono"
-style = "Italic"
+# Cursor configuration
+cursor:
+  style: Block
+  unfocused_hollow: true
 
-[font.normal]
-family = "JetBrains Mono"
-style = "Regular"
+# Selection configuration
+selection:
+  save_to_clipboard: true
 
-[[keyboard.bindings]]
-action = "Paste"
-key = "V"
-mods = "Alt"
+# Terminal configuration
+terminal:
+  dynamic_title: true
+  cursor_blink: true
+  cursor_blink_interval: 750
 
-[[keyboard.bindings]]
-action = "Copy"
-key = "C"
-mods = "Alt"
+# Keyboard shortcuts
+key_bindings:
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  - { key: T, mods: Control|Shift, action: CreateNewTab }
+  - { key: W, mods: Control|Shift, action: CloseTab }
+  - { key: Tab, mods: Control, action: NextTab }
+  - { key: Tab, mods: Control|Shift, action: PreviousTab }
 
-[[keyboard.bindings]]
-action = "PasteSelection"
-key = "Insert"
-mods = "Shift"
+# Mouse configuration
+mouse:
+  double_click:
+    threshold: 300
+  triple_click:
+    threshold: 300
+  hide_when_typing: false
 
-[[keyboard.bindings]]
-action = "ResetFontSize"
-key = "Key0"
-mods = "Control"
+# Hints configuration
+hints:
+  enabled:
+    - hyperlinks
+  font:
+    style: Bold
+    size: 12
+  start:
+    - mods: Control
+      chars: "f"
+      action: ToggleInSelection
+  end:
+    - key: Escape
+      action: Quit
+    - key: Return
+      action: Quit
+    - key: Space
+      action: ToggleInSelection
+      mods: Control
 
-[[keyboard.bindings]]
-action = "IncreaseFontSize"
-key = "Equals"
-mods = "Control"
+# Advanced configuration
+debug:
+  render_timer: false
+  persistent_logging: false
+  log_level: Warn
+  print_events: false
+  ref_test: false
 
-[[keyboard.bindings]]
-action = "IncreaseFontSize"
-key = "Plus"
-mods = "Control"
+# Shell configuration
+shell:
+  program: /bin/zsh
+  args: []
 
-[[keyboard.bindings]]
-action = "DecreaseFontSize"
-key = "Minus"
-mods = "Control"
+# Working directory
+working_directory: None
 
-[[keyboard.bindings]]
-action = "ToggleFullscreen"
-key = "F11"
-mods = "None"
+# Live config reload
+live_config_reload: true
 
-[[keyboard.bindings]]
-action = "ClearLogNotice"
-key = "L"
-mods = "Control"
-
-[[keyboard.bindings]]
-chars = "\f"
-key = "L"
-mods = "Control"
-
-[[keyboard.bindings]]
-action = "ScrollToTop"
-key = "Up"
-mode = "~Alt"
-mods = "Shift"
-
-[[keyboard.bindings]]
-action = "ScrollToBottom"
-key = "Up"
-mode = "~Alt"
-mods = "Shift"
-
-[scrolling]
-history = 5000
-
-[window]
-dynamic_padding = false
-title = "Alacritty"
-
-[window.class]
-general = "Alacritty"
-instance = "Alacritty"
-
-[window.padding]
-x = 6
-y = 6
+# IPC socket
+ipc_socket: true

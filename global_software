@@ -1,0 +1,41 @@
+Installed software:
+
+- From the AUR/source
+yay
+fswebcam
+
+- From the main repo
+alacritty
+base
+base-devel
+bluez
+bluez-utils
+brightnessctl
+btop
+code
+dunst
+firefox
+git
+grim
+gst-plugin-pipewire
+imv
+libnotify
+man-db
+mpv
+neovim
+nicotine+
+obs-studio
+openssh
+pulsemixer
+python-pip
+slurp
+tmux
+ttf-jetbrains-mono
+ttf-roboto-mono
+unzip
+waylock
+wget
+wl-clipboard
+xdg-user-dirs
+zip
+zsh

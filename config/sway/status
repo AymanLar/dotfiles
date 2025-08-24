@@ -1,5 +1,8 @@
 #!/bin/sh
-# like 2018-10-06 and the time (e.g., 14:01)
+# Sway status bar script
+# Shows date, battery status, and volume
+
+# Date formatted like 2018-10-06 and the time (e.g., 14:01)
 date_formatted=$(date "+%a %F %H:%M")
 
 # Returns the battery status: "Full", "Discharging", or "Charging".

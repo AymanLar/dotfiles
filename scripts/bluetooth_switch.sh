@@ -9,4 +9,3 @@ else
     bluetoothctl power on
     notify-send "Bluetooth" "Bluetooth turned on"
 fi
-

@@ -22,4 +22,3 @@ if [ "$1" == "-st" ]; then
   echo "Storage Information:"
   df -h | awk '/^\/dev/{print "Drive:",$1,"\nTotal Size:",$2,"\nUsed:",$3,"\nFree:",$4,"\n"}'
 fi
-

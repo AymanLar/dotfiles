@@ -8,4 +8,3 @@ dunstify -u normal "Normal Notification" "This is a normal notification."
 
 # Display a low notification
 dunstify -u low "Low Notification" "This is a low notification."
-

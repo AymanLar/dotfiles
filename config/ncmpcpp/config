@@ -1,0 +1,12 @@
+# ncmpcpp basic config
+mpd_host = "localhost"
+mpd_port = "6600"
+ncmpcpp_directory = "~/.config/ncmpcpp"
+
+# Visuals
+song_browser_format = "%a - %t"
+statusbar_format = "%artist% - %title% [%elapsed%/%total%]"
+visualizer_fifo_path = "/tmp/mpd.fifo"
+
+# Optional: start in playlist view
+startup_view = "playlist"
